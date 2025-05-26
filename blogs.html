@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,36 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="src/styles.css">
+    <style>
+        .site-logo {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .site-logo {
+                height: 36px;
+            }
+        }
+        
+        .service-icon img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .service-icon img {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navigation" class="nav-fixed">
@@ -20,10 +50,7 @@
                 <!-- Logo -->
                 <div class="logo">
                     <a href="index.html">
-                        <div class="logo-text">
-                            WA
-                            <span class="logo-subtitle">WORTHY ADVISORS</span>
-                        </div>
+                        <img src="src/logo.png" alt="Worthy Advisors Logo" class="site-logo" />
                     </a>
                 </div>
 
@@ -325,10 +352,7 @@
                         <p>+91 93390 54077</p>
                         <p>kunal@worthyadvisors.in</p>
                         <p class="address">
-                            Purva Heights Bilekahalli,<br>
-                            Bannerghatta Road,<br>
-                            Bangalore South, Bangalore,<br>
-                            Karnataka-560076
+                            Purva Heights Bilekahalli,<br> Bannerghatta Road,<br> Bangalore South, Bangalore,<br> Karnataka-560076
                         </p>
                     </div>
                 </div>
@@ -369,4 +393,5 @@
     <!-- Scripts -->
     <script src="src/main.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,56 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="src/styles.css">
+    <style>
+        .client-logo-img {
+            height: 72px;
+            width: auto;
+            max-width: 180px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+            display: block;
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        
+        .client-logo-img:hover {
+            filter: grayscale(0%);
+        }
+        
+        @media (max-width: 768px) {
+            .client-logo-img {
+                height: 48px;
+                max-width: 120px;
+            }
+        }
+        
+        .clients-scroll-wrapper {
+            overflow-x: auto;
+            padding: 16px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .clients-scroll {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            min-width: 600px;
+        }
+        
+        .client-logo {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 64px;
+            background: transparent;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navigation" class="nav-fixed">
@@ -20,10 +70,7 @@
                 <!-- Logo -->
                 <div class="logo">
                     <a href="index.html">
-                        <div class="logo-text">
-                            WA
-                            <span class="logo-subtitle">WORTHY ADVISORS</span>
-                        </div>
+                        <img src="src/logo.png" alt="Worthy Advisors Logo" class="site-logo" />
                     </a>
                 </div>
 
@@ -86,7 +133,9 @@
             <div class="about-content-single animate-fade-up">
                 <h2 class="section-title">Who are we ?</h2>
                 <p class="about-description">
-                    At Worthy Advisors, we are a team of dedicated, experienced professionals in the treasury domain. We democratize treasury services for mid-sized corporate and Growing Companies. Our team has managed portfolios totaling over Rs. 9000+ Crores, ensuring optimized income, cost reduction, and effective fund utilization. At Worthy Advisors, we're more than just a treasury consulting company. We're your partners in financial management, committed to propelling your business towards greater financial efficiency and success.
+                    At Worthy Advisors, we are a team of dedicated, experienced professionals in the treasury domain. We democratize treasury services for mid-sized corporate and Growing Companies. Our team has managed portfolios totaling over Rs. 9000+ Crores, ensuring
+                    optimized income, cost reduction, and effective fund utilization. At Worthy Advisors, we're more than just a treasury consulting company. We're your partners in financial management, committed to propelling your business towards greater
+                    financial efficiency and success.
                 </p>
             </div>
         </div>
@@ -340,11 +389,27 @@
                     We work with businesses across various industries
                 </p>
             </div>
-            <div class="clients-grid animate-fade-up delay-200">
-                <div class="client-logo">TechCorp</div>
-                <div class="client-logo">Manufacturing Solutions</div>
-                <div class="client-logo">Global Enterprises</div>
-                <div class="client-logo">Healthcare Innovations</div>
+            <div class="clients-scroll-wrapper animate-fade-up delay-200">
+                <div class="clients-scroll">
+                    <div class="client-logo">
+                        <img src="src/arzoo_logo.png" alt="Arzoo Logo" class="client-logo-img" />
+                    </div>
+                    <div class="client-logo">
+                        <img src="src/cropnosys_logo.png" alt="Cropnosys Logo" class="client-logo-img" />
+                    </div>
+                    <div class="client-logo">
+                        <img src="src/duroflex_logo.png" alt="Duroflex Logo" class="client-logo-img" />
+                    </div>
+                    <div class="client-logo">
+                        <img src="src/meesho_logo.png" alt="Meesho Logo" class="client-logo-img" />
+                    </div>
+                    <div class="client-logo">
+                        <img src="src/stanzaliving_logo.png" alt="Stanza Living Logo" class="client-logo-img" />
+                    </div>
+                    <div class="client-logo">
+                        <img src="src/treebo_logo.png" alt="Treebo Logo" class="client-logo-img" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -399,10 +464,7 @@
                         <p>+91 93390 54077</p>
                         <p>kunal@worthyadvisors.in</p>
                         <p class="address">
-                            Purva Heights Bilekahalli,<br>
-                            Bannerghatta Road,<br>
-                            Bangalore South, Bangalore,<br>
-                            Karnataka-560076
+                            Purva Heights Bilekahalli,<br> Bannerghatta Road,<br> Bangalore South, Bangalore,<br> Karnataka-560076
                         </p>
                     </div>
                 </div>
@@ -443,4 +505,5 @@
     <!-- Scripts -->
     <script src="src/main.js"></script>
 </body>
+
 </html>
